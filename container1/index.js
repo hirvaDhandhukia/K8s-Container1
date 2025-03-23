@@ -28,12 +28,12 @@ app.post("/calculate", async (request, response) => {
     if (!file) {
       return response.status(400).json({
         file,
-        error: "Invalid JSON input.",
+        error: "Invalid JSON input. Hello",
       });
     }
 
     // does file exist in PV?
-    console.log("checking the file");
+    console.log("checking if the file exists");
     if (!fileExists(file)) {
       return response.status(404).json({
         file,
