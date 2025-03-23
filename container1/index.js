@@ -33,6 +33,7 @@ app.post("/calculate", async (request, response) => {
     }
 
     // does file exist in PV?
+    console.log("checking the file");
     if (!fileExists(file)) {
       return response.status(404).json({
         file,
