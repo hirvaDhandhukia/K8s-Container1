@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(portNum, () => {
   console.log(`Server of c1 started on localhost port ${portNum}`);
-  console.log("B00987633");
+  // console.log("B00987633");
 });
 
 // call c2 /process endpoint with the payload in the request & relay response to user
